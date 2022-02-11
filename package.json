@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Annaaste/sti-backend/issues"
   },
-  "homepage": "https://github.com/Annaaste/sti-backend#readme"
+  "homepage": "https://github.com/Annaaste/sti-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "healthcheck": "^0.1.3"
+  }
 }
