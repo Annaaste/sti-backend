@@ -8,6 +8,13 @@ app.use('/healthcheck', require('./routes/healthcheck.routes'));
 app.use(express.urlencoded( { extended: true }));
 app.use(cors())
 
+app.get("/", (req ,res)=>{
+    headers={"http_status":200, "cache-control": "no-cache"}
+    body={"blaha":"blä"}
+    res.set('Content-Type', 'application/json')
+    res.status(200).send(body)
+});
+
 app.get("/football", (req ,res)=>{
     headers={"http_status":200, "cache-control": "no-cache"}
     body=
